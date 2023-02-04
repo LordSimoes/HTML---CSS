@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {background-color: rgb(170, 253, 198);}
+
+h1  { background-color: rgb(52, 182, 121); font-size: 1.8em; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+h2   {color: ghostwhite; text-align: justify;}
+
+p {text-align: justify; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+
+body
+{
+    background-image:linear-gradient(75deg, #8D80AD,#99B2DD,#ADEBBB,#7DDE92);
+    background-attachment: fixed;
+}
+h1
+{
+    color: #353535;
+}

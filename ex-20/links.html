@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        
+        a{
+            color: violet;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited{
+            color: chartreuse;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: coral;
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: bold;
+            color: darkslategray;
+        }
+        a::before{
+            content: '==> ';
+        }
+        .especial{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+
+    <ul>
+    <li><a href="https://youtu.be/nQLwJApGCXw" target="_blank">repositorio github</a></li>
+    <li><a href="https://youtu.be/F0wXGxbQpmw" target="_blank" class="especial">canal do youtube</a></li>
+    <li><a href="https://youtu.be/HIxRDyFfnuc" target="_blank">site do canal</a></li>
+    </ul>
+</body>
+</html>
