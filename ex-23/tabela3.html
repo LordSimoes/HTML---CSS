@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>   
+    <!--
+    <style>
+        table {
+            width: 400px;
+            border-collapse: separate;
+        }
+        td{
+            border:1px solid black;
+            padding: 8px;
+        }
+        tr{
+            border:1px solid black;
+
+        }
+        td.dado{
+            background-color: aquamarine;
+        }
+        tr.linha{
+            background-color: coral;
+        }
+       
+        
+    </style>-->
+    <style>
+        table {
+            width: 500px;
+            border-collapse: separate;
+        }
+       td, th{
+        border: 1px solid black;
+        padding: 10px;
+       }
+       thead,tfoot{
+        background-color: gray;
+        color: azure;
+       }
+       .num{
+        text-align: right;
+       }
+       caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color:gainsboro;
+       }
+
+       td:hover{
+        background-color: rgba(0, 0, 0, 0.172);
+       }
+        
+    </style>-->
+</head>
+<body>
+    <h1>minha primeira grande tabela</h1> 
+    <!-- hierarquia de tabelas (simples)
+        table== tabela
+        table row = linha de tabela
+        table header = cabeçalho de tabela
+        table data = dado de tabela-->
+        <!--
+            ANATOMIA PARA TABELAS GRANDES
+            caption = legenda
+            TABLE
+                THEAD
+                TR,TD,TH
+            TBODY
+             TR,TD,TH
+            TFOOTER
+              TR,TD,TH
+
+        -->
+        <table>
+            <caption>tabela normal</caption>
+            <thead>
+                <tr>
+                    <th scope="col">estado</th>
+                    <th scope="col" style="width: 50px;">Populaçao</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sao paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio</td>
+                    <td class="num">17 265 943</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <td>0000
+
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
